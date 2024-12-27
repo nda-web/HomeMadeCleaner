@@ -18,27 +18,40 @@ HomeMadeCleaner es un script sencillo de PowerShell para limpiar archivos tempor
 - **Confirmación del usuario**: Pide confirmación antes de proceder con la limpieza.
 - **Espacio recuperado**: Calcula y muestra el espacio total recuperado después de la limpieza.
 
+## Novedades en la Versión 1.01
+
+- **Interfaz gráfica mejorada**: Ahora el script cuenta con una interfaz gráfica más intuitiva y fácil de usar.
+- **Barra de progreso**: Se ha añadido una barra de progreso para mostrar el avance de la limpieza.
+- **Botón de cancelación**: Los usuarios pueden cancelar el proceso de limpieza en cualquier momento.
+- **Mensaje de sistema limpio**: Si no se encuentran archivos ni claves de registro para eliminar, se muestra un mensaje de felicitaciones.
+- **Créditos actualizados**: La ventana de créditos ahora incluye la versión del programa y un diseño más limpio.
+
 ## Requisitos
 
-- Windows 10 o superior.
-- PowerShell 5.0 o superior.
+Para **ejecutar** el programa:
+- **Windows 10 o superior**.
+- **No se requiere PowerShell** (el programa es un ejecutable compilado con AutoIt).
+
+Para **compilar** el código fuente:
+- **AutoIt v3** (disponible en [autoitscript.com](https://www.autoitscript.com)).
 
 ## Instalación
 
-1. Descarga el archivo `HomeMadeCleaner.ps1` desde este repositorio.
+1. Descarga el archivo ejecutable `HomeMadeCleaner.exe` desde este repositorio.
 2. Colócalo en una carpeta de tu elección.
 
 ## Uso
 
-1. Haz clic derecho sobre el archivo `HomeMadeCleaner.ps1` y selecciona **Ejecutar con PowerShell**.
+1. Haz doble clic sobre el archivo `HomeMadeCleaner.exe` para ejecutarlo.
 2. Si se te solicita, otorga permisos de administrador.
-3. El script mostrará un resumen de los archivos y carpetas que se eliminarán, junto con el espacio que se recuperará.
-4. Confirma si deseas continuar con la limpieza.
-5. El script comenzará a limpiar las carpetas predefinidas y te informará sobre los archivos eliminados.
+3. El programa mostrará una interfaz gráfica con las opciones de escaneo y limpieza.
+4. Haz clic en **Escanear Sistema** para ver un resumen de los archivos y carpetas que se eliminarán.
+5. Si deseas proceder con la limpieza, haz clic en **Iniciar Limpieza**.
+6. El programa comenzará a limpiar las carpetas predefinidas y te informará sobre los archivos eliminados.
 
 ## Carpetas limpiadas
 
-El script limpia las siguientes ubicaciones:
+El programa limpia las siguientes ubicaciones:
 
 ### Windows
 - `C:\Windows\Temp`
@@ -61,12 +74,12 @@ El script limpia las siguientes ubicaciones:
 
 ## ¿Qué no hace?
 
-Este script **no limpia el registro de Windows**. Aunque podría implementarse, la limpieza del registro puede ser riesgosa si no se realiza correctamente. Se recomienda usar herramientas específicas para ello, como CCleaner o similares, y proceder con precaución.
+Este programa **no limpia el registro de Windows**. Aunque podría implementarse, la limpieza del registro puede ser riesgosa si no se realiza correctamente. Se recomienda usar herramientas específicas para ello, como CCleaner o similares, y proceder con precaución.
 
 ## Precauciones
 
 - **Archivos importantes**: Asegúrate de no tener archivos necesarios en las carpetas que se van a limpiar, como `Downloads`.
-- **Navegadores**: Este script puede cerrar sesiones abiertas o eliminar descargas parciales.
+- **Navegadores**: Este programa puede cerrar sesiones abiertas o eliminar descargas parciales.
 - **Ejecución segura**: Si tienes dudas, revisa el código antes de ejecutarlo.
 
 ## Contribuciones
@@ -79,9 +92,15 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para má
 
 ---
 
+## Captura de Pantalla
+
+![HomeMadeCleaner Screenshot](screenshot.png)
+
+---
+
 ## Ejemplo de Resumen
 
-Antes de la limpieza, el script mostrará un resumen como este:
+Antes de la limpieza, el programa mostrará un resumen como este:
 
 ```
 Resumen de lo que se va a borrar:
@@ -109,3 +128,14 @@ Espacio total a recuperar: 0.07 GB
 ---
 
 ¡Gracias por usar HomeMadeCleaner! Si tienes sugerencias o comentarios, no dudes en abrir un **issue**.
+
+---
+
+### **Cambios en la Versión 1.01:**
+1. **Interfaz gráfica mejorada**: Se ha mejorado la interfaz gráfica para hacerla más intuitiva.
+2. **Barra de progreso**: Se ha añadido una barra de progreso para mostrar el avance de la limpieza.
+3. **Botón de cancelación**: Los usuarios pueden cancelar el proceso de limpieza en cualquier momento.
+4. **Mensaje de sistema limpio**: Si no se encuentran archivos ni claves de registro para eliminar, se muestra un mensaje de felicitaciones.
+5. **Créditos actualizados**: La ventana de créditos ahora incluye la versión del programa y un diseño más limpio.
+
+---
